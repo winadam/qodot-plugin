@@ -90,6 +90,9 @@ func _run(context) -> Dictionary:
 					if entity_defintion_set.has(classname):
 						var entity_def_scene = load(entity_defintion_set[classname])
 						node = entity_def_scene.instance(PackedScene.GEN_EDIT_STATE_INSTANCE)
+						for property in entity_properties.keys():
+							print(property)
+							node.set(property, entity_properties[property])
 						is_child_scene = true
 					else:
 						node = Position3D.new()

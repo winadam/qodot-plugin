@@ -80,7 +80,7 @@ export(String) var material_extension = '.tres'
 export (SpatialMaterial) var default_material
 
 # Entity defintions
-export(Resource) var entity_definitions
+export(QodotEntityDefinitionSet) var entity_definitions
 
 # Threads
 export(String) var threading = CATEGORY_STRING
